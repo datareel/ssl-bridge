@@ -72,7 +72,7 @@ from source code:
 $ cd $HOME
 $ mkdir -pv git
 $ cd $HOME/git
-$ git https://github.com/datareel/ssl-bridge
+$ git clone https://github.com/datareel/ssl-bridge
 $ source $HOME/git/ssl-bridge/env/gnu_env.sh
 $ cd $HOME/git/ssl-bridge/ssl_bridge
 $ make
