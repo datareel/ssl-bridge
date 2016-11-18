@@ -1,5 +1,5 @@
 README file for DRLB SSL Bridge
-Last Modified: 10/19/2016
+Last Modified: 11/18/2016
 
 Contents:
 --------
@@ -42,8 +42,8 @@ System administrators, follow the instructions below to build an RPM
 for distribution:
 
 $ cd $HOME; mkdir -pv git; cd $HOME/git
-$ git clone https://github.com/datareel/datareel
-$ cd ${HOME}/git/datareel/load_balancer/rpm_builder
+$ git clone https://github.com/datareel/ssl-bridge
+$ cd ${HOME}/git/ssl-bridge/rpm_builder
 
 RHEL7/CENTOS7:
 $ ./make_ssl_rpm_package.sh rhel7
@@ -72,9 +72,9 @@ from source code:
 $ cd $HOME
 $ mkdir -pv git
 $ cd $HOME/git
-$ git clone https://github.com/datareel/datareel
-$ source $HOME/git/datareel/env/gnu_env.sh
-$ cd $HOME/git/datareel/load_balancer/ssl_bridge
+$ git https://github.com/datareel/ssl-bridge
+$ source $HOME/git/ssl-bridge/env/gnu_env.sh
+$ cd $HOME/git/ssl-bridge/ssl_bridge
 $ make
 $ sudo su root -c 'make install_root'
 
@@ -219,4 +219,5 @@ Remaining work on this project
 Support and Bug Tracking
 ------------------------
 
-https://github.com/datareel/datareel/issues
+https://github.com/datareel/ssl-bridge/issues
+
