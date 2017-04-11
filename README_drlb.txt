@@ -1,5 +1,5 @@
 DataReel Load Balancer (DRLB) 1.X Readme File
-DataReel Copyright (c) 2016 DataReel Software Development
+DataReel Copyright (c) 2016-2017 DataReel Software Development
 
 Online docs:
 http://datareel.com/info_drlb.html
@@ -1018,13 +1018,13 @@ CENTOS 5/6 or RHEL 5/6:
 # vi /etc/sysctl.conf
 
 CENTOS 7 or RHEL 7:
-# vi /usr/lib/sysctl.d/00-system.conf
+# vi /etc/sysctl.d/01-lb.conf
 
 To load changes CENTOS 5/6 or RHEL 5/6:
 # sysctl -p
 
 To load changes CENTOS 7 or RHEL 7:
-# sysctl -p /usr/lib/sysctl.d/00-system.conf
+# sysctl -p /etc/sysctl.d/01-lb.conf
 
 File Handle Limits:
 ------------------
