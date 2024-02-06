@@ -5,7 +5,7 @@ BUILDDIR_tmp="/tmp/drlb_ssl_build_${USERNAME}"
 
 if [ -z $1 ]; then
     echo "You must supply a OS version"
-    echo "Usage: ${0} rhel6|rhel7"
+    echo "Usage: ${0} rhel6|rhel7|rhel8|rhel9"
     exit 1
 fi
 
@@ -95,7 +95,7 @@ mkdir -p ${Build}/usr/share/man/man8
 chmod 755 ${Build}/usr/share/man/man8
 gzip -c ../man/drlb_ssl_server.8 > ${Build}/usr/share/man/man8/drlb_ssl_server.8.gz
 chmod 644  ${Build}/usr/share/man/man8/drlb_ssl_server.8.gz
-if [ "${OS}" == "rhel7" ]; then
+if [ "${OS}" == "rhel7" ] || [ "${OS}" == "rhel8" ] || [ "${OS}" == "rhel9" ]; then
     mkdir -p ${Build}/etc/systemd/system
     chmod 755 ${Build}/etc/systemd/system
     cp -f ../systemd_init/drlb_ssl_server.service  ${Build}/etc/systemd/system/drlb_ssl_server.service

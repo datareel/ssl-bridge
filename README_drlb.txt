@@ -1,5 +1,5 @@
 DataReel Load Balancer (DRLB) 1.X Readme File
-DataReel Copyright (c) 2016-2017 DataReel Software Development
+DataReel Copyright (c) 2016-2014 DataReel Software Development
 
 Online docs:
 http://datareel.com/info_drlb.html

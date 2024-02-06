@@ -1,7 +1,7 @@
 BuildArch: x86_64
 Name: drlb_ssl_server
 Version: 1.59        
-Release: 1.el7.x86_64
+Release: 1.el8.x86_64
 Summary: Datareel SSL Load Balancer RPM
 Group: System Environment/Daemons
 License: GPL       
@@ -11,20 +11,6 @@ Vendor: Datareel Open Source
 
 Requires: openssl-libs
 Requires: openssl
-Requires: libdl.so.2()(64bit)
-Requires: libssl.so.10()(64bit)
-Requires: libcrypto.so.10()(64bit)
-Requires: libgssapi_krb5.so.2()(64bit)
-Requires: libkrb5.so.3()(64bit)
-Requires: libcom_err.so.2()(64bit)
-Requires: libk5crypto.so.3()(64bit)
-Requires: libz.so.1()(64bit)
-Requires: libkrb5support.so.0()(64bit)
-Requires: libkeyutils.so.1()(64bit)
-Requires: libresolv.so.2()(64bit)
-Requires: libselinux.so.1()(64bit)
-Requires: libpcre.so.1()(64bit)
-Requires: liblzma.so.5()(64bit)
 Requires: libpthread.so.0()(64bit)
 Requires: libstdc++.so.6()(64bit)
 Requires: libm.so.6()(64bit)
@@ -82,6 +68,8 @@ if [ $1 -ge 1 ] ; then
 fi
 
 %changelog
+* Tue Feb 06 2024 Datareel <datareel.com>
+- Updates for RHEL 8 and RHEL 9 builds
 * Wed Oct 19 2016 Datareel <datareel.com>
 - Fix for potential ABRT exit from safe_close call on closed file descriptor
 * Sun Oct 10 2016 Datareel <datareel.com>

@@ -1,6 +1,6 @@
 BuildArch: x86_64
 Name: drlb_ssl_server
-Version: 1.58        
+Version: 1.59        
 Release: 1.el6.x86_64
 Summary: Datareel SSL Load Balancer RPM
 Group: System Environment/Daemons
